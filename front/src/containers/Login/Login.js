@@ -34,11 +34,11 @@ class Login extends Component {
     return (
       <div className="container">
         <Row className="show-grid">
-          <Col md={4} mdOffset={4} >
+          <Col md={4} mdoffset={4} >
            <Navbar>Login to chat</Navbar>
-           <Form horizontal onSubmit={this.submitFormHandler}>
+           <Form horizontal="true" onSubmit={this.submitFormHandler}>
             {this.props.error && (
-              <Alert bsStyle="danger">{this.props.error.message}</Alert>
+              <Alert variant="danger">{this.props.error.message}</Alert>
             )}
             <FormElement
               propertyName="username"
@@ -59,8 +59,8 @@ class Login extends Component {
             />
 
             <FormGroup>
-              <Col smOffset={3} sm={9}>
-                <Button bsStyle="primary" type="submit">
+              <Col smoffset={3} sm={9}>
+                <Button variant="primary" type="submit">
                   Login
                 </Button>
                 <NavLink to="/register" style={{float: 'right', marginRight: "20px", marginTop: '6px', fontWeight: '700'}}>Registration</NavLink>

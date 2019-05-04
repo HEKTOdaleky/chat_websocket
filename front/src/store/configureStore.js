@@ -1,6 +1,6 @@
 import { routerMiddleware, routerReducer } from "react-router-redux";
 import thunkMiddleware from "redux-thunk";
-import createHistory from "history/createBrowserHistory";
+import { createBrowserHistory as createHistory } from 'history'
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 
 import { readState, saveState } from "./localStorage";

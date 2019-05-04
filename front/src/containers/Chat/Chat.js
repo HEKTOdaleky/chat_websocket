@@ -95,8 +95,8 @@ class Chat extends Component {
           <p>
             <Button
               onClick={this.props.logoutUser}
-              bsStyle="primary"
-              bsSize="small"
+              variant="primary"
+              size="sm"
             >
               Log Out
             </Button>
@@ -131,7 +131,6 @@ class Chat extends Component {
             <FormGroup controlId="formControlsTextarea">
               <FormLabel>New Message</FormLabel>
               <FormControl
-                componentClass="textarea"
                 placeholder="Enter Message"
                 value={this.state.messageText}
                 onChange={this.messageNameChangeHandler}

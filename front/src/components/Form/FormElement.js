@@ -29,15 +29,15 @@ const FormElement = props => {
   return (
     <FormGroup
       controlId={props.propertyName}
-      validationState={props.error && "error"}
+      validationstate={props.error && "error"}
     >
-      <Col componentClass={FormLabel} sm={3}>
+      <Col as={FormLabel} sm={3}>
         {props.title}
       </Col>
       <Col sm={9}>
         <FormControl
           type={props.type}
-          componentClass={componentClass}
+          as={componentClass}
           required={props.required}
           placeholder={props.placeholder}
           name={props.propertyName}

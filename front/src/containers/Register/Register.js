@@ -36,9 +36,9 @@ class Register extends Component {
     return (
       <div className="container">
         <Row className="show-grid">
-          <Col md={4} mdOffset={4}>
+          <Col md={4} mdoffset={4}>
             <Navbar>Register new user</Navbar>
-            <Form horizontal onSubmit={this.submitFormHandler}>
+            <Form horizontal="true" onSubmit={this.submitFormHandler}>
 
               <FormElement
                 propertyName="username"
@@ -61,8 +61,8 @@ class Register extends Component {
               />
 
               <FormGroup>
-                <Col smOffset={3} sm={9}>
-                  <Button bsStyle="primary" type="submit">
+                <Col smoffset={3} sm={9}>
+                  <Button variant="primary" type="submit">
                     Register
                   </Button>
                 </Col>
