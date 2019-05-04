@@ -13,8 +13,6 @@ app.use(cors());
 app.use(express.json());
 mongoose.connect(config.db);
 
-
-
 db.once("open", () => {
 
     app.listen(port, () => {
